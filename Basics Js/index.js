@@ -41,7 +41,7 @@ arrayOrder(myArray)
 
 // Resolution exercise 3
 
-var myArray = [20, 7, 3, 2, 1, 8, 9];
+var myArr = [20, 7, 3, 2, 1, 8, 9];
 
 function biggerInArray(arr) {
      
@@ -51,6 +51,6 @@ function biggerInArray(arr) {
 
 }
 
-biggerInArray(myArray)
+biggerInArray(myArr)
 
 // -------------------------------------------------------------------------------------//
