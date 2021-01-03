@@ -8,7 +8,7 @@ console.log(dobro);
 // map => js
 let arrDobro = [];
 function dobro(arr) {
-    for (var i = 0; i < arr.length; i++) {
+    for (let i in arr) {
         arrDobro.push(arr[i] * 2);
     }
     return arrDobro
@@ -23,12 +23,38 @@ console.log(soma);
 function somar(arr, inicial) {
     let somador = 0;
     inicial != 0 ? somador = inicial : somador = somador
-    for (var i = 0; i < arr.length; i++) {
+    for (let i in arr) {
         somador += arr[i];
     }
     return somador
 }
 console.log(somar(arr, 0))
+
+//filter
+let myArr = [3, 5, 8, 10, 32, 2];
+
+function biggerThan7(number) {
+    return number > 6;
+}
+
+let filteredArr = myArr.filter(biggerThan7);
+console.log(filteredArr);
+
+// filter => js
+let myArr = [3, 5, 8, 10, 32, 2];
+let filteredArr = [];
+
+const filterArr = arr => {
+    for (let num of arr) {
+        if (num > 7) {
+            filteredArr.push(num);
+        }
+    }
+    console.log(filteredArr);
+}
+
+filterArr(myArr);
+
 
 
 

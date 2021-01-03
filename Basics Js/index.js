@@ -28,8 +28,7 @@ biggerNumber(6, 3)
 
 // Resolution exercise 2
 
-
-
+var myArray = [3, 2, 4];
 
 function arrayOrder(arr) {
     var orderedArray = arr.sort((a ,b)=>a-b)
@@ -38,9 +37,10 @@ function arrayOrder(arr) {
     }
 }
 
-var myArray = [3, 2, 4];
-let sortedArray = arr => {arr.sort((a ,b)=>a-b)}
-console.log(sortedArray)
+// or
+
+let sortedArray = arr => {return arr.sort((a ,b)=>a-b)}
+console.log(sortedArray(myArray))
 
 arrayOrder(myArray)
 
