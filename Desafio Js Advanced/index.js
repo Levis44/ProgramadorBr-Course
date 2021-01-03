@@ -29,3 +29,8 @@ function somar(arr, inicial) {
     return somador
 }
 console.log(somar(arr, 0))
+
+
+
+
+

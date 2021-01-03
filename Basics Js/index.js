@@ -28,15 +28,19 @@ biggerNumber(6, 3)
 
 // Resolution exercise 2
 
-var myArray = [3, 2, 4];
+
+
 
 function arrayOrder(arr) {
-    
-    var orderedArray = arr.sort((a,b)=>a-b)
+    var orderedArray = arr.sort((a ,b)=>a-b)
     for (let num of orderedArray) {
         console.log(num)
     }
 }
+
+var myArray = [3, 2, 4];
+let sortedArray = arr => {arr.sort((a ,b)=>a-b)}
+console.log(sortedArray)
 
 arrayOrder(myArray)
 
@@ -243,4 +247,3 @@ function spikes() {
 spikes()
 
 // -------------------------------------------------------------------------------------//
-
