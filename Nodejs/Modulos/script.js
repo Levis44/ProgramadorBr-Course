@@ -1,6 +1,5 @@
 let calc = require('./calc');
 
-
 let args = process.argv.slice(2);
 
 let a = Number(args[1]);
