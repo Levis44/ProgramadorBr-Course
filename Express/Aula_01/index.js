@@ -11,12 +11,23 @@ app.get("/", (req, res) => {
 //  res.type("txt"); // texto normal
 //  res.type("json"); // json
 
-    res.send("Salve");
+    res.send("Salve GET");
+});
 
+app.post("/", (req, res) => {
+    res.send("Salve POST");
+});
+
+app.put("/", (req, res) => {
+    res.send("Salve PUT");
+});
+
+app.delete("/", (req, res) => {
+    res.send("Salve DELETE");
 });
 
 const PORT = 5000;
 
 app.listen(PORT, () => {
     console.log(`Server rodando na porta: ${PORT}`);
-})
+});

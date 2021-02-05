@@ -7,5 +7,33 @@
 </head>
 <body>
     <h1>Olar</h1>
+
+    <script>
+        
+        // POST
+        fetch('http://192.168.0.8:5000/', {method:'post'})
+        .then(res => {
+            return res.text();
+        }).then(html => {
+            console.log(html)
+        });
+
+        // PUT
+        fetch('http://192.168.0.8:5000/', {method:'put'})
+        .then(res => {
+            return res.text();
+        }).then(html => {
+            console.log(html)
+        });
+
+        // DELETE
+        fetch('http://192.168.0.8:5000/', {method:'delete'})
+        .then(res => {
+            return res.text();
+        }).then(html => {
+            console.log(html)
+        });
+
+    </script>
 </body>
 </html>
