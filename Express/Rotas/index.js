@@ -44,7 +44,7 @@ app.get("/aluno/:id", (req, res) => {
 
 // QUERY
 
-app.get("/aluna", (req, res) => {
+app.get("/alunoId", (req, res) => {
     
     // pega da Query
     // http://192.168.0.8:3000/aluna?id=2
