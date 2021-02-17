@@ -4,8 +4,6 @@ let bodyParser = require('body-parser');
 
 let aluno = require('./routes/aluno');
 
-
-
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use("/aluno", aluno)
